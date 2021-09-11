@@ -44,3 +44,15 @@ function adicColor(origin) {
     const paleta = document.querySelector('.selected')
     origin.target.style.backgroundColor = window.getComputedStyle(paleta, null).getPropertyValue("background-color"); 
 }
+
+// Requisito 9
+
+let button = document.getElementById('clear-board');
+button.addEventListener("click", limpar);
+
+function limpar() {
+    let pix = document.getElementsByClassName('pixel')
+    for (let index = 0; index < pix.length; index += 1) {
+        pix[index].style.backgroundColor = 'white';
+    }
+}

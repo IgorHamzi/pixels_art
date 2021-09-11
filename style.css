@@ -1,5 +1,6 @@
 body {
 margin-left: 40px;
+text-align: center;
 }
 
 .color {    
@@ -18,7 +19,7 @@ margin-left: 40px;
 }
 
 #color2 {
-    background-color: crimson;
+    background-color: green;
     border-style: solid;
     border-width: 1px;
 }
