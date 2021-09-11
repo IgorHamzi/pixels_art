@@ -36,12 +36,16 @@ margin-left: 40px;
 }
 
 .pixel {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     border-style: solid;
+    border-color: black;
     border-width: 1px;
     display: inline-block;
-    margin-right: -4px;
     margin-top: -4px;
     background-color: white;
+}
+
+#pixel-board {
+    
 }
