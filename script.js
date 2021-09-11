@@ -15,7 +15,14 @@ function quadroDePixels() {
             line.appendChild(pixel);
         }
     }
+    let pixels = document.getElementsByClassName('pixel');
+
+    for (let index = 0; index < pixels.length; index += 1) {
+        pixels[index].addEventListener("click", adicColor);
+        console.log('teste');
+    }
 }
+// Requisto 7
 
 let color = document.getElementsByClassName('color');
 
@@ -28,4 +35,12 @@ function selectColor(origin) {
         color[index].classList.remove('selected');
     }
     origin.target.classList.add('selected');
+}
+
+
+// Requisito 8
+
+function adicColor(origin) {
+    const paleta = document.querySelector('.selected')
+    origin.target.style.backgroundColor = window.getComputedStyle(paleta, null).getPropertyValue("background-color"); 
 }
