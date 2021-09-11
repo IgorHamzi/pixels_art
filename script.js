@@ -14,5 +14,4 @@ function quadroDePixels() {
         }
     }
 }
-
 quadroDePixels();
