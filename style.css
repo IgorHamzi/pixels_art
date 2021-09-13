@@ -47,3 +47,10 @@ text-align: center;
     background-color: white;
 }
 
+#colorRandom {
+    position: fixed;
+    top: 180px;
+    left: 33%;
+    cursor: pointer;
+}
+
